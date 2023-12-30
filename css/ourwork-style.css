@@ -1,0 +1,229 @@
+
+@font-face {
+  font-family: bold;
+  src: url('../font/ClashDisplay_Complete/Fonts/OTF/ClashDisplay-Bold.otf');
+}
+
+@font-face {
+  font-family: semi;
+  src: url('../font/ClashDisplay_Complete/Fonts/OTF/ClashDisplay-Semibold.otf');
+}
+
+@font-face {
+  font-family: regular;
+  src: url('../font/ClashDisplay_Complete/Fonts/OTF/ClashDisplay-Regular.otf');
+}
+
+@font-face {
+  font-family: medium;
+  src: url('../font/ClashDisplay_Complete/Fonts/OTF/ClashDisplay-Medium.otf');
+}
+
+
+:root {
+  --white-color:          #ffffff;
+  
+  --about-bg-color:       #f9f9f9;
+
+  --gray-color:           #909090;
+  --p-color:              #666262;
+
+  --base-font-family:     'Plain', sans-serif;
+  --font-weight-bold:     bold;
+  --font-weight-normal:   normal;
+  --font-weight-light:    300;
+  --font-weight-thin:     100;
+
+  --h1-font-size:         48px;
+  --h2-font-size:         36px;
+  --h3-font-size:         28px;
+  --h4-font-size:         24px;
+  --h5-font-size:         22px;
+  --h6-font-size:         22px;
+  --p-font-size:          18px;
+  --base-font-size:       16px;
+  --menu-font-size:       14px;
+
+  --border-radius-large:  100%;
+  --border-radius-small:  2px;
+}
+
+
+
+
+
+
+
+
+
+
+  /*---------------OUR WORK---------------*/
+
+  .work-section{
+
+    background-color: rgba(20, 19, 35, 1);;
+    height: 370px;
+}
+
+  .work{
+
+    color: white;
+    font-size: 95px;
+    font-family: semi;
+    line-height: 110.7px;
+    animation: fadeInRight 1s ease-in-out;
+  }
+
+
+  @media  (min-width: 280px ) and (max-width:  291px){
+
+
+    .work {
+      font-size: 80px;
+      line-height: 100.7px;
+  }
+  
+  }
+
+
+
+
+  .work-1{
+
+    color: #BABABA;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23.44px;
+    animation: fadeInRight 1s ease-in-out;
+  }
+
+.image-section{
+display: flex;
+justify-content: center;
+width: 100%;
+height: auto;
+background-color: rgba(20, 19, 35, 1);
+
+}
+
+
+  .image-section1{
+
+    height:auto;
+    max-width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-content: center;
+    flex-flow: wrap;
+  }
+  
+
+ 
+  @media screen and(max-width:600px) {
+    .box3{
+      width:90px;
+    }
+
+
+  }
+
+  @media screen and(max-width:600px) {
+    .box4{
+      width:40px;
+    }
+
+
+  }
+
+.box1{
+  width: 200px;
+  height: 250px;
+  background-image: url(../images/Rectangle\ 155.png);
+  margin: 20px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  animation: fadeInRight 1s ease-in-out;
+}
+.box2{
+  width: 200px;
+  height: 250px;
+  background-image: url(../images/Rectangle\ 156.png);
+  margin: 20px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  animation: fadeInRight 1s ease-in-out;
+}
+.box3{
+  width: 200px;
+  height: 250px;
+  background-image: url(../images/Rectangle\ 157.png);
+  margin: 20px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  animation: fadeInRight 1s ease-in-out;
+}
+
+.box4{
+  width: 200px;
+  height: 250px;
+  background-image: url(../images/Rectangle\ 158.png);
+  margin: 20px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  animation: fadeInRight 1s ease-in-out;
+}
+.box5{
+  width: 200px;
+  height: 250px;
+  background-image: url(../images/Rectangle\ 159.png);
+  margin: 20px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  animation: fadeInRight 1s ease-in-out;
+}
+
+.box6{
+  width: 200px;
+  height: 250px;
+  background-image: url(../images/Rectangle\ 160.png);
+  margin: 20px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  animation: fadeInRight 1s ease-in-out;
+}
+@media screen and(max-width:600px) {
+  .box1{
+    width:90px;
+  }
+
+
+}
+
+@media screen and(max-width:600px) {
+  .box2{
+    width:40px;
+  }
+
+
+}
+
+
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+
+
+
+
+

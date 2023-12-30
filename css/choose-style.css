@@ -1,0 +1,303 @@
+
+
+
+
+@font-face {
+    font-family: light;
+    src: url('../font/ClashDisplay_Complete/Fonts/OTF/ClashDisplay-Light.otf');
+  }
+  
+  @font-face {
+    font-family: medium;
+    src: url('../font/ClashDisplay_Complete/Fonts/OTF/ClashDisplay-Medium.otf');
+  }
+  
+  @font-face {
+    font-family: redular;
+    src: url('../font/ClashDisplay_Complete/Fonts/OTF/ClashDisplay-Regular.otf');
+  }
+  
+  
+:root {
+  --white-color:          #ffffff;
+  
+  --about-bg-color:       #f9f9f9;
+
+  --gray-color:           #909090;
+  --p-color:              #666262;
+
+  --base-font-family:     'Plain', sans-serif;
+  --font-weight-bold:     bold;
+  --font-weight-normal:   normal;
+  --font-weight-light:    300;
+  --font-weight-thin:     100;
+
+  --h1-font-size:         48px;
+  --h2-font-size:         36px;
+  --h3-font-size:         28px;
+  --h4-font-size:         24px;
+  --h5-font-size:         22px;
+  --h6-font-size:         22px;
+  --p-font-size:          18px;
+  --base-font-size:       16px;
+  --menu-font-size:       14px;
+
+  --border-radius-large:  100%;
+  --border-radius-small:  2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*----------- CHOOSE WROK -------------*/
+
+
+
+/* 
+.variant{
+
+    background-color:#141323;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.imgae-1{
+    height:100%;
+    width: 100%;
+
+}
+
+.imgae-1 img{
+
+    width: 100%;
+    opacity: 0;
+    transform: translateX(100%);
+    animation: fadeInRight 1s forwards;
+
+    
+  
+}
+
+.container{
+  
+   max-width: 100%;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: fadeInLeft 1s forwards;
+    
+}
+
+
+.container h5{
+   color:  #FFFFFF;
+   font-size:30px ;
+   line-height:50px ;
+   width: 45%;
+}
+
+.container h2{
+    color: white;
+    font-size:40px ;
+    line-height:50px ;
+    width: 70%;
+}
+
+.container span{
+    color: #D94F4E;
+    
+}
+
+.container p{
+    color:  #9C9C9C ;
+    line-height:23.44px;
+    font-size: 1rem;
+    width: 60%;
+}
+
+.container button{
+    background-color: #D94F4E;
+    color: white;
+    width: 160px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+}
+
+.container button:hover{
+    color: black;
+}
+
+
+  
+
+
+@keyframes fadeInLeft {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+} */
+
+
+
+
+
+.schedule{
+    background-color: #141323;
+    background-image: url(../images/image\ 35.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+     height: 1100px;
+     
+   
+  }
+  
+  
+  .wow-1{
+  
+    margin-top: 10%;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: fadeInLeft 1s forwards;
+  
+  }
+  
+  .wow-1 h5 {
+  
+    color: white;
+    font-size: 27px;
+    line-height: 2rem;
+    font-family: light;
+  
+  }
+  
+  .wow-1 h2 {
+    font-size: 45px;
+    color: white;
+    line-height: 4rem;
+    font-family: medium;
+  }
+  
+  .wow-1 span {
+    color: #D94F4E;
+    line-height: 50px;
+  }  
+  
+  .wow-1 p {
+    color:#9C9C9C ;
+    font-size: 1rem;
+    line-height: 23px;
+  }
+  
+  
+  
+  /*--------- BUTTON --------*/
+  
+  
+  .check {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(to left, #D94F4E, #D94F4E); 
+    border: none;
+    border-radius: 10px;
+    transition: background 0.6s ease-in;
+    border-color: #D94F4E;
+    margin-bottom: 2%;
+    background-color: #D94F4E;
+    height: 60px;
+    width: 185px;
+    margin-top: 14px;
+    transition: color 0.4s ease-in-out;
+    color: white;
+    
+  }
+  
+  .check:active,
+.check:focus {
+    outline: #D94F4E;
+    border: 1px solid transparent; 
+}
+
+  
+  
+  .check::before {
+    content: 'Services';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(to left, #fafafa, #ffffff);
+  clip-path: polygon(0% 143%, 101% 101%, 94% 51%, 101% -1%, 0% 0%, -101% 0%);
+  transition: width 0.5s ease-in-out, background-color 0.5s ease-in-out;
+   color: #D94F4E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  }
+  
+  
+  .check:hover::before {
+  width: 85%;
+  }
+  
+  #font {
+    color: white;
+    font-size: 20px;
+    display: none;
+   
+  }
+  
+  .check:hover #font {
+    color: white;
+    margin-left: 95%;
+    display: block;
+  margin-top: -28px;
+  }
+  
+  
+  .check:hover {
+  color: #D94F4E;
+  
+  }
+  
+  
+  @keyframes fadeInLeft {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+  }
+  
+  @keyframes fadeInRight {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+  
+  }
+  
+  

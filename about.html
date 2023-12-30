@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <title></title>
+
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+     <link rel="stylesheet" href="css/aos.css">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+     <link rel="stylesheet" href="css/about-style.css">
+
+</head>
+<body>
+
+ 
+    <div class="mobile-container">
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+            <img class="svg" src="./images/original 2.svg" alt="">
+         
+            <div class="search-container">
+                <div class="search">
+                    <input type="text" id="searchInput" placeholder="Search.." name="search">
+                </div>
+                <button id="searchButton" onclick="toggleSearch()">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+            
+            <i id="popupBtn" class="fa fa-bars"></i>
+            
+            <div id="popup" class="popup">
+                <span class="close" onclick="closePopup()">
+                        <i class="fa fa-close" id="fa-close"></i>
+                    </span>
+                <div class="popup-content">
+                    
+
+                    <a class="text-center" id="home" href="index.html">Home</a>
+                    <a class="text-center" id="home" href="about.html">About Us</a>
+                    <a class="text-center" id="home" href="services.html">Services</a>
+                    <a class="text-center" id="home" href="#">Portfolio</a>
+                    <a class="text-center" id="home" href="#">Contact Us</a>
+
+                </div>
+            </div>
+
+
+
+          
+        </div>
+    
+
+
+
+
+
+
+        
+        <div class="background" ></div>
+    </div>
+    
+
+
+
+
+    
+    
+
+
+
+
+     <!-- ABOUT -->
+
+     <section class="section-about">
+      <div class="image-about">
+          <img class="" src="./images/about.jpg">
+      </div>
+
+
+      <div class="section-about1">
+
+      <h6>About Us</h6>
+      <h1>Unlock The Power Of <br> Digital <span>Imagination</span></h1>
+      <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et
+          eos. Clita erat ipsum <br> et lorem et sit.Tempor erat elitr rebum at clita. Diam dolor diam ipsum
+          sit. Aliqu diam amet diam et eos.<br> Clita erat ipsum et lorem et sit.</p>
+      <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et
+          eos. Clita erat ipsum <br>et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat
+          amet.Tempor erat elitr rebum at clita.<br> Diam dolor diam ipsum sit. Aliqu diam amet diam et eos.
+          Clita erat ipsum et lorem et sit.</p>
+
+          <button class="check"  onclick="window.location.href=''">Services  <i class="fas fa-chevron-right" id="font"></i></button>
+          
+          
+   
+              
+            <div class="Group141">
+           <video class="video" src="./images/video.mp4" autoplay muted playsinline loop></video>
+            </div>
+           
+       
+          
+                
+</div>
+      
+           </section>
+
+
+
+
+
+
+
+
+
+
+
+
+           <div class="schedule" id="choose">
+            <div class="container">
+                <div class="row drag">
+                    
+                    <div class="col-lg-6 wow-1 ">
+                        <h5>Why Choose Us</h5>
+                        <h2>Unlock  The Power Of <br> Digital <span> Imagination </span></h2>
+                        <p>Lorem ipsum dolor sit amet consectetur. Hac elementum vehicula amet scelerisque felis sagittis pharetra. Eu egestas nisl nunc est volutpat turpis ante. Turpis et rutrum dictum cras. Mauris morbi sit ipsum quam aenean eget posuere. Tincidunt aliquet mattis vulputate volutpat aenean quam eget ullamcorper ullamcorper. </p>
+                        <p>Lorem ipsum dolor sit amet consectetur. Hac elementum vehicula amet scelerisque felis sagittis pharetra. Eu egestas nisl nunc est volutpat turpis ante. Turpis et rutrum dictum cras. Mauris morbi sit ipsum quam aenean eget posuere. Tincidunt aliquet mattis vulputate volutpat aenean quam eget ullamcorper ullamcorper. </p>
+    
+    
+                      
+                            <button class="check" onclick="window.location.href='wanna.html'">Services<i class="fas fa-chevron-right" id="font"></i></button>
+    
+    
+    
+                    </div>
+    
+                 
+                  
+                </div>
+              
+            </div>
+        </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script>
+            var video = document.getElementById("myVideo");
+        
+            // Function to play the video
+            function playVideo() {
+                video.play();
+            }
+        
+            // Check if the video is supported and if it's an iOS device
+            var isiOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+        
+            // If it's an iOS device, add an event listener for user interaction
+            if (isiOS) {
+                document.addEventListener("click", function() {
+                    playVideo();
+                });
+            } else {
+                // If it's not an iOS device, autoplay the video
+                video.autoplay = true;
+                video.muted = true;
+            }
+        </script>
+
+
+    <script>
+        // Use JavaScript to trigger the image animation after the page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelector('.schedule img').style.right = '0';
+        });
+    </script>
+
+
+   <!------------------- NAVBAR ----------------->
+    
+
+   <script src="script.js"></script>
+
+
+
+   <script>
+   var popup = document.getElementById('popup');
+   var popupBtn = document.getElementById('popupBtn');
+   
+   popupBtn.onclick = function() {
+       if (popup.style.display === "block") {
+           popup.style.display = "none";
+       } else {
+           popup.style.display = "block";
+       }
+   };
+   
+   function closePopup() {
+       popup.style.display = "none";
+   }
+   
+   </script>
+
+
+
+<!----- ON CLICK BUTTON SEARCH ----->
+
+<script>
+    function toggleSearch() {
+        var searchInput = document.getElementById('searchInput');
+        var searchButton = document.getElementById('searchButton');
+
+        if (searchInput.classList.contains('active')) {
+            closeSearch();
+        } else {
+            searchInput.classList.add('active');
+            searchButton.innerHTML = '<i class="fa fa-search"></i>';
+            searchInput.focus();
+        }
+    }
+
+    function closeSearch() {
+        var searchInput = document.getElementById('searchInput');
+        var searchButton = document.getElementById('searchButton');
+
+        searchInput.classList.remove('active');
+        searchButton.innerHTML = '<i class="fa fa-search"></i>';
+    }
+</script>
+
+
+
+
+     <!-- SCRIPTS -->
+     <script src="js/jquery.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/aos.js"></script>
+     <script src="js/smoothscroll.js"></script>
+     <script src="js/custom.js"></script>
+     
+
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <title></title>
+
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+
+     <!-- MAIN CSS -->
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="css/wanna-style.css">
+     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+
+    
+    <div class="mobile-container">
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+            <img class="svg" src="./images/original 2.svg" alt="">
+         
+            <div class="search-container">
+                <div class="search">
+                    <input type="text" id="searchInput" placeholder="Search.." name="search">
+                </div>
+                <button id="searchButton" onclick="toggleSearch()">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+            
+            <i id="popupBtn" class="fa fa-bars"></i>
+            
+            <div id="popup" class="popup">
+                <span class="close" onclick="closePopup()">
+                        <i class="fa fa-close" id="fa-close"></i>
+                    </span>
+                <div class="popup-content">
+                    
+
+                    <a class="text-center" id="home" href="index.html">Home</a>
+                    <a class="text-center" id="home" href="about.html">About Us</a>
+                    <a class="text-center" id="home" href="services.html">Services</a>
+                    <a class="text-center" id="home" href="portfolio.html">Portfolio</a>
+                    <a class="text-center" id="home" href="#">Contact Us</a>
+
+                </div>
+            </div>
+
+
+
+          
+        </div>
+    
+
+
+
+
+
+
+        
+        <div class="background" ></div>
+    </div>
+    
+
+<section class="see-wanna">
+
+
+    <div class="wanna" id="roundImage">
+        <div class="see text-center">
+            <div class="see-h1">
+                <h1 class="wanna1">You Wanna See<br> Our Services</h1>
+    
+                <button class="check" id="animateButton" onclick="rotateAndRedirect()">Check<i class="fas fa-chevron-right" id="font"></i></button>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+    <script src="script.js"></script>
+   
+
+
+  
+    <script>
+        function rotateAndRedirect() {
+          // Get the elements
+          var roundImage = document.getElementById('roundImage');
+          var seeH1 = document.querySelector('.see-h1');
+      
+          // Add class to apply transition
+          roundImage.classList.add('rotate-transition');
+          seeH1.classList.add('rotate-transition');
+      
+          // Add style to rotate and scale down the image
+          roundImage.style.transform = 'rotate(90deg) scale(1)'; // Adjust the scale factor as needed
+      
+          // Add style to rotate the text (adjust the selector as needed)
+          seeH1.style.transform = 'rotate(0) scale(0)'; // Adjust the scale factor as needed
+      
+          // Redirect to services.html after a delay
+          setTimeout(function() {
+            // Redirect to services.html
+            window.location.href = 'services.html';
+          }, 1000); // Adjust the delay as needed
+        }
+    </script>
+    
+  
+    
+
+
+
+
+        
+        
+<!----- ON CLICK BUTTON SEARCH ----->
+
+<script>
+  function toggleSearch() {
+      var searchInput = document.getElementById('searchInput');
+      var searchButton = document.getElementById('searchButton');
+
+      if (searchInput.classList.contains('active')) {
+          closeSearch();
+      } else {
+          searchInput.classList.add('active');
+          searchButton.innerHTML = '<i class="fa fa-search"></i>';
+          searchInput.focus();
+      }
+  }
+
+  function closeSearch() {
+      var searchInput = document.getElementById('searchInput');
+      var searchButton = document.getElementById('searchButton');
+
+      searchInput.classList.remove('active');
+      searchButton.innerHTML = '<i class="fa fa-search"></i>';
+  }
+</script>
+
+      <!------------------- NAVBAR ----------------->
+
+
+<script>
+    var popup = document.getElementById('popup');
+    var popupBtn = document.getElementById('popupBtn');
+    
+    popupBtn.onclick = function() {
+        if (popup.style.display === "block") {
+            popup.style.display = "none";
+        } else {
+            popup.style.display = "block";
+        }
+    };
+    
+    function closePopup() {
+        popup.style.display = "none";
+    }
+
+
+
+
+    
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+    </html>

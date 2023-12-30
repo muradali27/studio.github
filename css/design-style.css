@@ -1,0 +1,311 @@
+
+
+
+@font-face {
+  font-family: semi;
+  src: url('../font/ClashDisplay_Complete/Fonts/OTF/ClashDisplay-Bold.otf');
+}
+
+@font-face {
+  font-family: medium;
+  src: url('../font/ClashDisplay_Complete/Fonts/OTF/ClashDisplay-Semibold.otf');
+}
+
+
+  
+  :root {
+  --white-color:          #ffffff;
+  
+  --about-bg-color:       #f9f9f9;
+  
+  --gray-color:           #909090;
+  --p-color:              #666262;
+  
+  --base-font-family:     'Plain', sans-serif;
+  --font-weight-bold:     bold;
+  --font-weight-normal:   normal;
+  --font-weight-light:    300;
+  --font-weight-thin:     100;
+  
+  --h1-font-size:         48px;
+  --h2-font-size:         36px;
+  --h3-font-size:         28px;
+  --h4-font-size:         24px;
+  --h5-font-size:         22px;
+  --h6-font-size:         22px;
+  --p-font-size:          18px;
+  --base-font-size:       16px;
+  --menu-font-size:       14px;
+  
+  --border-radius-large:  100%;
+  --border-radius-small:  2px;
+  }
+  
+
+
+
+
+
+
+
+/*--------- Design With Sting Studio.---------- */
+
+
+
+.port{
+
+  background-color:  rgba(20, 19, 35, 1);;
+
+}
+.container1{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.port-1{
+
+  font-family: semi;
+  color: white;
+  font-size: 75px;
+white-space: nowrap;
+opacity: 0;
+animation: moveAndReturn 50s linear infinite;
+font-weight: bold;
+}
+
+.port-1 span{
+  color: #D94F4E;
+}
+.dot{
+  color: #D94F4E;
+}
+
+.background1{
+
+  content: "";
+  position: initial;
+  border-bottom: 1px solid #D94F4E;
+  margin-top: 15px;
+
+}
+
+
+/*---------- SLIDE ANIMATION-------------- */
+
+@keyframes slideAnimation {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes moveAndReturn {
+  0%, 100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  25% {
+    transform: translateX(-100%);
+  }
+  75% {
+    transform: translateX(100%);
+  }
+}
+
+
+
+
+
+.port-2{
+  color: white;
+  margin-top: 50px;
+  font-size: 61px;
+  font-family: medium;
+  
+  }
+  
+  .port-3{
+  
+    color: #D94F4E;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .port-4{
+    color: white;
+    margin-top: 46px;
+    line-height: 18.44px;
+    font-size: 16px;
+    
+  }
+  
+  
+  
+  
+  @media  (min-width: 280px) and (max-width: 480px){
+  
+  
+    .port-2{
+      color: white;
+      margin-top: 50px;
+      font-size: 35px;
+      font-weight: bold;
+      
+      }
+      
+      .port-3{
+      
+        color: #D94F4E;
+        font-size: 36px;
+        text-align: center;
+        font-weight: bold;
+      }
+      .port-4{
+        color: white;
+        margin-top: 46px;
+        line-height: 18.44px;
+        font-size: 16px;
+        width: 30%;
+      }
+      
+  
+  
+  
+  
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+
+
+
+
+
+
+
+.btn-3{
+  background-color: #D94F4E; 
+  color: white;
+  border-radius: 10px;
+
+}
+
+
+
+
+
+
+
+.btn-4{
+  color: #D94F4E;
+}
+
+
+
+
+.text-center{
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+
+
+.btn-2 {
+  background-color: #D94F4E;
+  border-radius: 10px;
+  color: white;
+}
+
+.btn-2:hover{
+
+color: black;
+}
+
+
+
+
+
+
+/* ---HOVER IMAGE------- */
+
+
+.enlarged {
+  width: 220px; /* Set the initial width */
+  height: 467px; /* Set the initial height */
+  transition: width 0.3s, height 0.3s; /* Add smooth transition effect */
+  border-radius: 40px;
+}
+
+.hoverable-image {
+  transition: width 0.8s ease-in-out; /* Adjust the duration and timing function as needed */
+}
+
+
+
+.Property{
+  height: 467px;
+  width: 142px;
+  border-radius: 90px;
+margin-top: 30px;
+margin-left: 10px;
+}
+
+.Property-1{
+  height: 467px;
+  width: 142px;
+  border-radius: 90px;
+margin-top: 30px;
+margin-left: 10px;
+}
+
+.Property-2{
+  height: 467px;
+  width: 142px;
+  border-radius: 90px;
+margin-top: 30px;
+margin-left: 10px;
+}
+
+.Property-3{
+  height: 467px;
+  width: 142px;
+  border-radius: 90px;
+margin-top: 30px;
+margin-left: 10px;
+}
+
+.Property-4{
+  height: 467px;
+  width: 142px;
+  border-radius: 90px;
+margin-top: 30px;
+margin-left: 10px;
+}
+
+
+.Property-5{
+  background-color:  rgba(20, 19, 35, 1);;
+  height: auto;
+}
+
+
+
+.Property-6{
+  height: 467px;
+  width: 142px;
+  border-radius: 90px;
+margin-top: 30px;
+margin-left: 10px;
+}
+
+

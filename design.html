@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title></title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+
+
+
+
+    <link rel="stylesheet" href="css/design-style.css">
+
+</head>
+
+<body>
+   
+
+
+
+    <section class="port">
+        <div class="container1">
+            <div class="row">
+
+                <div class="col-12">
+                    <div class="background1"></div>
+                    <h2 class="port-1">Design With Sting Studio<span>.</span>Design With Sting Studio<spna class="dot">.</spna></h2>
+                    <div class="background1"></div>
+                    <h2 class="port-2 text-center">Let’s Check Our <span class="port-3"><br>Recent Project</span></h2>
+
+
+
+
+                    <div class="col-6 text-center">
+                        <h2 class="port-4 text-center">Lorem ipsum dolor sit amet consectetur. Sollicitudin quis mi
+                            donec sem id vitae<br> scelerisque sed sapien. Pulvinar est amet dictumst nunc in dui diam.</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section class="Property-5">
+        <div class="container">
+            <div class="row">
+
+                <div class="click text-center">
+                    <img src="./images/Frame 50.jpg" class="Property"  id="clickableImage-1" onmouseover="hoverImage(this)" onmouseout="unhoverImage(this)">
+                </div>
+
+                <div class="click text-center">
+                    <img src="./images/Frame 49.jpg" class="Property"  id="clickableImage-1" onmouseover="hoverImage1(this)" onmouseout="unhoverImage1(this)">
+                </div>
+
+                <div class="click text-center">
+                    <img src="./images/Frame 52.jpg" class="Property"  id="clickableImage-1" onmouseover="hoverImage2(this)" onmouseout="unhoverImage2(this)">
+                </div>
+
+                <div class="click text-center">
+                    <img src="./images/Frame 53.jpg" class="Property"  id="clickableImage-1" onmouseover="hoverImage3(this)" onmouseout="unhoverImage3(this)">
+                </div>
+
+                <div class="click text-center">
+                    <img src="./images/Frame 54.jpg" class="Property"  id="clickableImage-1" onmouseover="hoverImage4(this)" onmouseout="unhoverImage4(this)">
+                </div>
+                <div class="click text-center">
+                    <img src="./images/Frame 51.png" class="Property"  id="clickableImage-1" onmouseover="hoverImage5(this)" onmouseout="unhoverImage5(this)">         
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <!---------HOVER IMAGE  ------------>
+
+
+   
+    <script>
+        function hoverImage(img) {
+            img.src = "./images/image 17.jpg";
+            img.classList.add("hoverable-image");
+            img.style.width = "365px"; // Set the desired width
+        }
+    
+        function unhoverImage(img) {
+            img.src = "./images/Frame 50.jpg";
+            img.style.width = ""; // Reset the width to its original value
+            img.classList.remove("hoverable-image");
+        }
+    </script>
+
+
+
+
+<script>
+    function hoverImage1(img) {
+        img.src = "./images/image 18.jpg";
+        img.classList.add("hoverable-image");
+        img.style.width = "365px"; // Set the desired width
+    }
+
+    function unhoverImage1(img) {
+        img.src = "./images/Frame 49.jpg";
+        img.style.width = ""; // Reset the width to its original value
+        img.classList.remove("hoverable-image");
+    }
+</script>
+
+
+
+
+
+    
+<script>
+    function hoverImage2(img) {
+        img.src = "./images/image 23.jpg";
+        img.classList.add("hoverable-image");
+        img.style.width = "365px"; // Set the desired width
+    }
+
+    function unhoverImage2(img) {
+        img.src = "./images/Frame 52.jpg";
+        img.style.width = ""; // Reset the width to its original value
+        img.classList.remove("hoverable-image");
+    }
+</script>
+
+  
+  
+
+
+
+
+    
+<script>
+    function hoverImage3(img) {
+        img.src = "./images/image 180.jpg";
+        img.classList.add("hoverable-image");
+        img.style.width = "365px"; // Set the desired width
+    }
+
+    function unhoverImage3(img) {
+        img.src = "./images/Frame 53.jpg";
+        img.style.width = ""; // Reset the width to its original value
+        img.classList.remove("hoverable-image");
+    }
+</script>
+
+  
+  
+
+
+<script>
+    function hoverImage4(img) {
+        img.src = "./images/Frame 55.jpg";
+        img.classList.add("hoverable-image");
+        img.style.width = "365px"; // Set the desired width
+    }
+
+    function unhoverImage4(img) {
+        img.src = "./images/Frame 54.jpg";
+        img.style.width = ""; // Reset the width to its original value
+        img.classList.remove("hoverable-image");
+    }
+</script>
+
+
+
+
+
+
+<script>
+    function hoverImage5(img) {
+        img.src = "./images/Frame 61.jpg";
+        img.classList.add("hoverable-image");
+        img.style.width = "365px"; // Set the desired width
+    }
+
+    function unhoverImage5(img) {
+        img.src = "./images/Frame 51.png";
+        img.style.width = ""; // Reset the width to its original value
+        img.classList.remove("hoverable-image");
+    }
+</script>
+
+
+      <!------------------- NAVBAR ----------------->
+
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+
+</script>
+
+
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/custom.js"></script>
+
+
+
+    </body>
+    </html>
